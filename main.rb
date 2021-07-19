@@ -2,9 +2,13 @@ puts "Insert your text here."
 txt = gets.chomp
 txt.scan(/./)
 len = txt.length
-result = ''
+result = ""
+j = 0
 
-len.times do |i|
-  result += (txt[i].ord - 3).chr
+while j <= 26 do 
+  len.times do |i|
+    result += (txt[i].ord - j).chr
+  end
+  puts " #{result}\n"
+  j += 1
 end
-puts result
