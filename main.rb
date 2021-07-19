@@ -10,7 +10,7 @@ puts "-" * 55
 while j <= 25 do
   while k <= 25 do 
     len.times do |i|
-      result += (txt[i].ord - j).chr
+      result += (txt[i].ord - j).chr + "|"
     end
     puts "[#{k}]: #{result}\n"
     puts "-" * 55 + "\n"
