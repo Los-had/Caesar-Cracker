@@ -5,10 +5,10 @@ len = txt.length
 result = ""
 j = 0
 
-while j <= 26 do 
+while j <= 25 do 
   len.times do |i|
     result += (txt[i].ord - j).chr
   end
-  puts " #{result}\n"
+  puts "#{result}\n\n"
   j += 1
 end
