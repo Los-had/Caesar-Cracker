@@ -1,4 +1,4 @@
-def menu()
+def menu
   puts "-" * 55
   puts "[1]. Caesar cipher crack\n[2]. Caesar cipher encryption\n[3]. Caesar cipher decryption\n[4]. Exit"
   puts "-" * 55
@@ -17,7 +17,8 @@ def menu()
     puts "'#{choice}': is invalid"
   end
 end 
-def caesar_decryption()
+
+def caesar_decryption
   puts "Insert your text here."
   txt = gets.chomp
   puts "Insert cipher key"
@@ -32,7 +33,8 @@ def caesar_decryption()
   puts result
   menu()
 end
-def caesar_encryption()
+
+def caesar_encryption
   puts "Insert your text here."
   txt = gets.chomp
   puts "Insert cipher key"
@@ -47,7 +49,8 @@ def caesar_encryption()
   puts result
   menu()
 end
-def caesar_crack()
+
+def caesar_crack
   puts "Insert your text here."
   txt = gets.chomp
   txt.scan(/./)
@@ -70,4 +73,5 @@ def caesar_crack()
     end
   end
 end
-menu()
+
+menu
